@@ -1,0 +1,22 @@
+<ion-view title="Login" id="page5">
+    <ion-content padding="true"> <!-- class="has-header" -->
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Matric No.</span>
+                    <input type="text" placeholder="Matric No." ng-model="data.matric">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="Password" ng-model="data.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <!-- <a ui-sref="menu.homepage" id="login-button5" class="button button-stable  button-block">Log in</a>
+            <a ui-sref="signup" id="login-button6" class="button button-positive  button-block button-clear">Or create an account</a> -->
+
+            <button class="button button-block button-calm" ng-click="login()">Login</button>
+            <button ui-sref="signup" class="button button-block button-clear" ng-click="signup()">Or create an account</button>
+        </form>
+    </ion-content>
+</ion-view>
